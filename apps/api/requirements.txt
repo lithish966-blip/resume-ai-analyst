@@ -10,3 +10,6 @@ pymupdf==1.25.1
 python-docx==1.1.2
 email-validator==2.2.0
 openai==1.59.7
+celery==5.4.0
+redis==5.2.1
+pgvector==0.3.6
