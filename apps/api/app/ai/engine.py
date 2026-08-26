@@ -29,6 +29,6 @@ class AIEngine:
         skills = [x for x in vocabulary if x in lower]
         keyword_score = min(95, 35 + len(skills) * 5)
         content_score = min(90, 45 + min(45, len(text) // 250))
-        return {"summary":"Deterministic analysis completed. Add an AI provider key for deeper semantic analysis.","skills":skills,"strengths":["Resume text is readable" if text.strip() else "No resume text found"],"weaknesses":["Add quantified achievements","Tailor keywords to the target job"],"recommendations":["Use measurable outcomes","Add role-specific keywords","Keep sections clearly labeled"],"ats_score=":0,"ats_score":round((keyword_score+content_score)/2),"content_score":content_score,"keyword_score":keyword_score,"formatting_score":70}
+        return {"summary":"Deterministic analysis completed. Add an AI provider key for deeper semantic analysis.","skills":skills,"strengths":["Resume text is readable" if text.strip() else "No resume text found"],"weaknesses":["Add quantified achievements","Tailor keywords to the target job"],"recommendations":["Use measurable outcomes","Add role-specific keywords","Keep sections clearly labeled"],"ats_score":round((keyword_score+content_score)/2),"content_score":content_score,"keyword_score":keyword_score,"formatting_score":70}
 
 ai_engine = AIEngine()
